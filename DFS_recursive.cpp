@@ -5,20 +5,6 @@ int color[100];
 int parent [100];
 void DFS(int src)
 {
-     cout << src << " ";
-    color[src] = "gray";
-    for (int j = 0; j < Vec_node[src].size(); j++)
-    {
-
-        int v = Vec_node[src][j]; // 2, 3, 4, 5
-
-        if (color[v] == "white")
-        {
-            DFS(v);
-        }
-    }
-
-    color[src] = "black";
 
 }
 
